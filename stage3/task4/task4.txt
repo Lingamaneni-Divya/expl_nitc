@@ -1,0 +1,7 @@
+begin
+ read(a);
+ read(b);
+ write(a);
+
+end;
+

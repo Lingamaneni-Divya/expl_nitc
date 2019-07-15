@@ -1,0 +1,15 @@
+begin
+	read(a);
+	read(b);
+	read(c);
+	if(a<b)
+		then if(a<b<c)
+			then write(c); a=b+c;
+			else write(b);
+		     endif;
+		else if(a<c)
+			then write(c);
+			else write(a);
+		     endif;
+	endif;
+end;

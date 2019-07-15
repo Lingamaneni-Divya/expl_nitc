@@ -1,0 +1,17 @@
+decl
+int Compute(int p, int q,int l,int m,int n,int o);
+int find(int x); 
+enddecl
+
+int main()
+{
+
+ decl 
+int a,b,t,c,d,e,f;
+enddecl
+ begin
+t = Compute(a+b,find(a-b),c-1,d-1,e-1,f-1); 
+
+return 0;
+end;
+}

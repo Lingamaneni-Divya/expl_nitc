@@ -1,0 +1,4 @@
+1) if you write bubble sort 1st and fibo 2nd in the i/p file:
+	then you are getting segmentation fault while codegen(); though the tree is same 
+	else you are getting correct o/p if you switch the order in i/p file
+   FIND OUT WHY!!!!!!!!!!!?

@@ -1,0 +1,75 @@
+class
+A{
+	decl
+		int a;
+		int fibo(int n);
+	enddecl
+	int fibo(int n){
+		decl
+		enddecl
+		begin
+			if(n==0) then
+			   self.a=1;
+			else
+			   if(n==1) then
+			     self.a=1;
+			   else
+			   self.a=self.fibo(n-1)+self.fibo(n-2);
+			   endif;
+			endif;
+			return self.a;
+			
+		end;
+	}
+}    
+B extends A{
+	
+	decl
+		int b;               
+		int fibo(int n);
+	enddecl
+  	int fibo(int n){
+		decl
+		enddecl
+		begin
+			if(n==0) then
+			   self.b=1;
+			else
+			   if(n==1) then 
+				self.b=1;
+			   else
+				if(n==2) then
+				  self.b=1;
+				else
+			   	self.b=self.fibo(n-1)+self.fibo(n-2);
+				endif;
+			   endif;
+			endif;
+			return self.b;
+			
+		end;
+	}
+}  
+endclass
+
+decl
+    int n,temp;
+    A x;
+enddecl
+
+int main(){
+         decl
+         enddecl
+         begin
+             n = initialize(); 
+             read(n);                                             
+             if (n>7) then
+                 x= new(A);
+             else
+                x= new(B);
+             endif; 
+             write(x.fibo(n));                                                
+             return 0;
+         end;
+         }
+

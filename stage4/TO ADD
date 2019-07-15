@@ -1,0 +1,6 @@
+1)2d arrays
+2)pointers
+3)line no of the error if possible
+4)type checking at runtime!!? eg:decl int arr[10]; enddecl i=20; arr[i]; how to resolve this??
+5)add read filename of the program/input filename ,as input. -----"EASY"---
+

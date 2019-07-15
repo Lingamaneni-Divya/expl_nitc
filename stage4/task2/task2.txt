@@ -1,0 +1,17 @@
+begin
+decl
+	int num, sum;
+	str mesg, same;
+enddecl
+
+read(num);
+sum=0;
+while(num!=0) do
+	sum = sum + num;
+	read(num);
+endwhile;
+write("sum is:");
+write(sum);
+mesg="good bye";
+write(mesg);
+end;
